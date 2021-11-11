@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Student</title>
+</head>
+
+<body>
+    <!-- override POST to PUT by method-override -->
+    <form action="/students/delete/?_method=DELETE" method="post">
+        <label for="id">Input Student ID which you want to delete.</label>
+        <input type="number" id="id" name="id">
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
